@@ -1,0 +1,143 @@
+/*
+ * 
+ */
+package fanouss;
+
+import java.util.Scanner;
+
+/**
+ *
+ * by ahmad alfreehan
+ */
+public class Fanouss {
+    public void head(int n){
+    for (int i=1; i<=n; i++)
+        {
+            if(i<=n/2)
+            {
+                for (int k=1; k<(n/2)-i+2; k++)
+                {
+                    System.out.print(" ");
+                }
+                System.out.print("             *");
+            
+                for (int k=1; k<(i*2)-2; k++)
+                {
+                    System.out.print(" ");
+                }
+                
+                if(i != 1) {
+                    System.out.print("*");
+                }}
+        
+            else
+            {
+                for (int k=1; k<i-(n/2); k++)
+                {
+                    System.out.print(" ");
+                }
+                
+                System.out.print("             *");
+            
+                for (int k=1; k<(n*2)-(i*2); k++)
+                {
+                    System.out.print(" ");
+                }
+                
+                if(i != n) {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    
+    }
+    public void heads(int n,int m){
+    for (int i = 1; i <= n; i++) {
+            System.out.print("         ");
+           for (int j = 0; j < n-i; j++) {
+               System.out.print(" ");
+            }
+            for (int j = 0; j < (i*2)-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < m/3; i++) {
+            System.out.print("         ");
+            for (int j = 0; j < (n*2)-1; j++) {
+                System.out.print("=");
+            }
+            System.out.println();
+        }
+                for (int i = 0; i < m/m; i++) {
+        System.out.println("         {Ahmad_Alfrehan }");}
+    }
+    public void body(int h){
+       for (int i = 0; i <= h ; i++) {
+            
+            System.out.print("         | ");
+            if (i==0) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print("  __  ");
+            }}
+            if (i==1) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(" /  \\ ");
+            }}
+            if (i>=2&&i<=9) {
+                for (int k = 0; k < 4; k++) {
+                System.out.print(" | ");
+            }}
+            if (i==10) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(" /  \\ ");
+            }}
+            if (i>=11&&i<=16) {
+            for (int il = 0; il < 4; il++) {
+            System.out.print("_ _");
+        }}
+        
+            System.out.print("  |    ");
+            
+                System.out.println();
+            }
+    }
+    public void base(int m,int n){
+    for (int i = 0; i < m/m; i++) {
+        System.out.println("         {RAMADAN MUBARK }");
+        System.out.println("         {Ahmad_Alfrehan }");
+        }
+        for (int i = 0; i < m/4; i++) {
+            System.out.print("         ");
+            for (int j = 0; j < (n*2)-1; j++) {
+                System.out.print("=");
+            }
+            System.out.println();
+        }
+       for (int i = n; i <= (n*4)/3; i++) {
+            System.out.print("");
+           for (int j = 0; j < (n*2)-i; j++) {
+               System.out.print(" ");
+            }
+            for (int j = 0; j < (i*2)-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("[ *RAMADAN IS SWEETER WITH AHMAD* ]");
+        }
+    
+
+    public static void main(String[] args) {
+
+        Scanner b = new Scanner(System.in);
+        int n =b.nextInt();int m =b.nextInt();
+        int h=b.nextInt();
+        Fanouss fa=new Fanouss();
+        fa.head(n);
+        fa.heads(n, m);
+        fa.body(h);
+        fa.base(m, n);
+        
+    }}
